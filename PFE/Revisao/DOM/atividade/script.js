@@ -14,7 +14,16 @@ botao.addEventListener("click", ()=>{
         return
     }
 
-    p.innerText=`Produto: ${nomeProduto.value} - R$ ${(Number(precoProduto.value)).toFixed(2)}`
+    const preco = Number(precoProduto.value);
+
+    if(Number.isNaN((preco))){
+        nomeProduto.value = ""
+        precoProduto.value = ""  
+        alert("O preco deve ser um número")  
+        return
+    }
+
+    p.innerText=`Produto: ${nomeProduto.value} - R$ ${preco.toFixed(2)}`
     p.classList.add("card")
 
     vitrine.appendChild(p)
