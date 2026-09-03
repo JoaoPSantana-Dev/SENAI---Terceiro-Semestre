@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario com TailWind</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="bg-pink-100 min-h-screen min-w-screen flex items-center justify-center">
+    <div classname = "card" class = "bg-white p-8 rounded-4xl shadow-2xl">
+        <h2 class="text-center text-2xl text-gray-800 font-bold mb-6">Cadastro</h2>
+        
+        <form id="formCadastro">
+            <div>
+            <label for="nome" class="block text-sm font-semibold">Nome</label>
+            <input
+
+                type="text"
+                id = "nome"
+                placeholder="Digite seu nome"
+                class="mt-1 w-full px-3 py-2 border border-gray-400 rounded-2xl"
+                >
+            </div>
+
+            <div class="mt-8">
+            <label for="senha" class="block text-sm font-semibold">Senha</label>
+            <input
+
+                type="password"
+                id = "senha"
+                placeholder="Digite sua senha"
+                class="mt-1 w-full px-3 py-2 border border-gray-400 rounded-2xl"
+                >
+            </div>
+        </form>
+    </div>
+  </body>
+</html>
