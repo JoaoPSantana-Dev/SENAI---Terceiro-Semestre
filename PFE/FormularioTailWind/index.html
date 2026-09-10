@@ -6,12 +6,18 @@
     <title>Formulario com TailWind</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body class="bg-pink-100 min-h-screen min-w-screen flex items-center justify-center">
+
+  <body class="bg-pink-100 min-h-screen min-w-screen flex flex-col items-center justify-center">
     <div classname = "card" class = "bg-white p-8 rounded-4xl shadow-2xl">
-        <h2 class="text-center text-2xl text-gray-800 font-bold mb-6">Cadastro</h2>
+        <h2 class="text-center text-2xl text-gray-800 font-bold mb-4">Cadastro</h2>
         
-        <form id="formCadastro">
-            <div>
+        <form id="formCadastro" class="space-y-4">
+
+          <div
+          id="mensagem">
+          </div>
+            
+          <div>
             <label for="nome" class="block text-sm font-semibold">Nome</label>
             <input
 
@@ -20,9 +26,21 @@
                 placeholder="Digite seu nome"
                 class="mt-1 w-full px-3 py-2 border border-gray-400 rounded-2xl"
                 >
-            </div>
+           </div>
 
-            <div class="mt-8">
+           <div>
+            <label for="email" class="block text-sm font-semibold">Email</label>
+            <input
+
+              type="email"
+              id="email"
+              placeholder="Digite seu email"
+              class="mt-1 w-full px-3 py-2 border border-gray-400 rounded-2xl"
+              >
+           </div>
+
+          
+            <!-- <div>
             <label for="senha" class="block text-sm font-semibold">Senha</label>
             <input
 
@@ -31,8 +49,29 @@
                 placeholder="Digite sua senha"
                 class="mt-1 w-full px-3 py-2 border border-gray-400 rounded-2xl"
                 >
-            </div>
+            </div> -->
+
+            <button
+            type="submit"
+            id="submit-button"
+            
+            class="w-full py-2 bg-blue-600 rounded-2xl text-white hover:bg-blue-800 hover:duration-200 hover:scale-102 cursor-pointer"
+            >
+            Enviar
+            </button>
         </form>
-    </div>
+
+      </div>
+
+      <div>
+          <ul id="items">
+          </ul>
+      </div>
+  
+
+
   </body>
+
+  
+  <script src="script.js"></script>
 </html>
