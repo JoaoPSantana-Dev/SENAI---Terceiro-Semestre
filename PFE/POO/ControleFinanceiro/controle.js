@@ -96,14 +96,14 @@ class GerenciamentoFinanceiro{
             mensagem = "Sua situação: No vermelho!";
         } 
 
-        console.log(`O seu saldo atual é: ${saldo}. `+mensagem);
+        console.log(`O seu saldo atual é: R$ ${saldo.toFixed(2)}. `+mensagem);
     }
 }
 
 
 
-const receitas=[45]
-const despesas=[10]
+const receitas=[45,20,60,1070]
+const despesas=[10,25,80,120]
 
 const joao = new GerenciamentoFinanceiro(receitas,despesas);
 
