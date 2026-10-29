@@ -1,3 +1,28 @@
+:root{
+  --bg: #f4f5f7,
+  --card: #fff,
+  --column: #ebecf0,
+  --primary: #0079bf;
+}
+
+.add-task-container{
+    margin-bottom: 20px;
+    display:flex;
+    gap:10px
+}
+
+input{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+body{
+    font-family: sans-serif;
+    background: var(--bg);
+    padding: 20px;    
+}
+
 .kanban {
     display: flex;
     flex-direction: row;
@@ -17,4 +42,14 @@
     box-sizing: border-box;
     border-radius: 20px;
 
+}
+
+.column h3{
+    text-align: center;
+}
+
+.card {
+    margin-left: 20px;
+    width: 100%;
+    color: #ffffff;
 }

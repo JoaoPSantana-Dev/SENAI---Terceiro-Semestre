@@ -23,4 +23,15 @@ function addTask(){
 
     document.getElementById("todo").appendChild(newCard);
     input.value = "";
+
 }
+
+containers.array.forEach((container) => {
+        container.addEventListener("dragover", (e)=>{
+            e.preventDefault();
+
+            const draggingCard = document.querySelector(".dragging");
+            if (draggingCard) container.appendChild(draggingCard);
+        })
+        
+    });
